@@ -8,7 +8,7 @@ files:
     destination: /var/www/html/application
     overwrite: true
   - source: /application/.htaccess
-    destination: /var/www/html/application/
+    destination: /var/www/html/application/.htaccess
     overwrite: true
   - source: /application/index.html
     destination: /var/www/html/application/
