@@ -1,0 +1,559 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/html
+    overwrite: true
+  - source: /application
+    destination: /var/www/html/application
+    overwrite: true
+  - source: /application/cache
+    destination: /var/www/html/application/cache
+    overwrite: true
+  - source: /application/config
+    destination: /var/www/html/application/config
+    overwrite: true
+  - source: /application/controllers
+    destination: /var/www/html/application/controllers
+    overwrite: true
+  - source: /application/core
+    destination: /var/www/html/application/core
+    overwrite: true
+  - source: /application/helpers
+    destination: /var/www/html/application/helpers
+    overwrite: true
+  - source: /application/hooks
+    destination: /var/www/html/application/hooks
+    overwrite: true
+  - source: /application/language
+    destination: /var/www/html/application/language
+    overwrite: true
+  - source: /application/language/english
+    destination: /var/www/html/application/language/english
+    overwrite: true
+  - source: /application/libraries
+    destination: /var/www/html/application/libraries
+    overwrite: true
+  - source: /application/libraries/tcpdf
+    destination: /var/www/html/application/libraries/tcpdf
+    overwrite: true
+  - source: /application/logs
+    destination: /var/www/html/application/logs
+    overwrite: true
+  - source: /application/models
+    destination: /var/www/html/application/models
+    overwrite: true
+  - source: /application/third_party
+    destination: /var/www/html/application/third_party
+    overwrite: true
+  - source: /application/third_party/TCPDF-master
+    destination: /var/www/html/application/third_party/TCPDF-master
+    overwrite: true
+  - source: /application/views
+    destination: /var/www/html/application/views
+    overwrite: true
+  - source: /application/views/errors
+    destination: /var/www/html/application/views/errors
+    overwrite: true
+  - source: /application/views/template
+    destination: /var/www/html/application/views/template
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5
+    destination: /var/www/html/assets/AdminLTE-2.0.5
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/bootstrap
+    destination: /var/www/html/assets/AdminLTE-2.0.5/bootstrap
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/bootstrap/css
+    destination: /var/www/html/assets/AdminLTE-2.0.5/bootstrap/css
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/bootstrap/fonts
+    destination: /var/www/html/assets/AdminLTE-2.0.5/bootstrap/fonts
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/bootstrap/js
+    destination: /var/www/html/assets/AdminLTE-2.0.5/bootstrap/js
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/build
+    destination: /var/www/html/assets/AdminLTE-2.0.5/build
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/build/bootstrap-less
+    destination: /var/www/html/assets/AdminLTE-2.0.5/build/bootstrap-less
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/build/bootstrap-less/mixins
+    destination: /var/www/html/assets/AdminLTE-2.0.5/build/bootstrap-less/mixins
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/build/less
+    destination: /var/www/html/assets/AdminLTE-2.0.5/build/less
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/build/less/skins
+    destination: /var/www/html/assets/AdminLTE-2.0.5/build/less/skins
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/dist
+    destination: /var/www/html/assets/AdminLTE-2.0.5/dist
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/dist/css
+    destination: /var/www/html/assets/AdminLTE-2.0.5/dist/css
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/dist/css/skins
+    destination: /var/www/html/assets/AdminLTE-2.0.5/dist/css/skins
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/dist/img
+    destination: /var/www/html/assets/AdminLTE-2.0.5/dist/img
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/dist/img/credit
+    destination: /var/www/html/assets/AdminLTE-2.0.5/dist/img/credit
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/dist/js
+    destination: /var/www/html/assets/AdminLTE-2.0.5/dist/js
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/dist/js/pages
+    destination: /var/www/html/assets/AdminLTE-2.0.5/dist/js/pages
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/documentation
+    destination: /var/www/html/assets/AdminLTE-2.0.5/documentation
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/documentation/build
+    destination: /var/www/html/assets/AdminLTE-2.0.5/documentation/build
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/documentation/build/include
+    destination: /var/www/html/assets/AdminLTE-2.0.5/documentation/build/include
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/pages
+    destination: /var/www/html/assets/AdminLTE-2.0.5/pages
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/pages/charts
+    destination: /var/www/html/assets/AdminLTE-2.0.5/pages/charts
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/pages/examples
+    destination: /var/www/html/assets/AdminLTE-2.0.5/pages/examples
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/pages/forms
+    destination: /var/www/html/assets/AdminLTE-2.0.5/pages/forms
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/pages/layout
+    destination: /var/www/html/assets/AdminLTE-2.0.5/pages/layout
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/pages/mailbox
+    destination: /var/www/html/assets/AdminLTE-2.0.5/pages/mailbox
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/pages/tables
+    destination: /var/www/html/assets/AdminLTE-2.0.5/pages/tables
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/pages/UI
+    destination: /var/www/html/assets/AdminLTE-2.0.5/pages/UI
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/bootstrap-slider
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/bootstrap-slider
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/bootstrap-wysihtml5
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/bootstrap-wysihtml5
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/chartjs
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/chartjs
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/adapters
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/adapters
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/lang
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/lang
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/plugins
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/plugins
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/a11yhelp/dialogs
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/a11yhelp/dialogs
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/a11yhelp/dialogs/lang
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/a11yhelp/dialogs/lang
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/about/dialogs
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/about/dialogs
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/about/dialogs/hidpi
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/about/dialogs/hidpi
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/clipboard/dialogs
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/clipboard/dialogs
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/dialog
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/dialog
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/fakeobjects/images
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/fakeobjects/images
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/image/dialogs
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/image/dialogs
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/image/images
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/image/images
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/link/dialogs
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/link/dialogs
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/link/images/hidpi
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/link/images/hidpi
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/magicline/images
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/magicline/images
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/magicline/images/hidpi
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/magicline/images/hidpi
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/pastefromword/filter
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/pastefromword/filter
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/scayt
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/scayt
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/scayt/dialogs
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/scayt/dialogs
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/specialchar/dialogs
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/specialchar/dialogs
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/specialchar/dialogs/lang
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/specialchar/dialogs/lang
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/table/dialogs
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/table/dialogs
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/tabletools/dialogs
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/tabletools/dialogs
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/wsc
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/wsc
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/wsc/dialogs
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/plugins/wsc/dialogs
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/skins/moono
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/skins/moono
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/skins/moono/images
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/skins/moono/images
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ckeditor/skins/moono/images/hidpi
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ckeditor/skins/moono/images/hidpi
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/colorpicker
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/colorpicker
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/colorpicker/img
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/colorpicker/img
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/datatables
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/datatables
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/datatables/images
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/datatables/images
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/datepicker
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/datepicker
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/datepicker/locales
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/datepicker/locales
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/daterangepicker
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/daterangepicker
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/fastclick
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/fastclick
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/flot
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/flot
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/fullcalendar
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/fullcalendar
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/iCheck
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/iCheck
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/iCheck/flat
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/iCheck/flat
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/iCheck/futurico
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/iCheck/futurico
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/iCheck/line
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/iCheck/line
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/iCheck/minimal
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/iCheck/minimal
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/iCheck/polaris
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/iCheck/polaris
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/iCheck/square
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/iCheck/square
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/input-mask
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/input-mask
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/input-mask/phone-codes
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/input-mask/phone-codes
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ionslider
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ionslider
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/ionslider/img
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/ionslider/img
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/jQuery
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/jQuery
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/jQueryUI
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/jQueryUI
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/jvectormap
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/jvectormap
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/knob
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/knob
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/morris
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/morris
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/pace
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/pace
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/slimScroll
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/slimScroll
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/sparkline
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/sparkline
+    overwrite: true
+  - source: /assets/AdminLTE-2.0.5/plugin/timepicker
+    destination: /var/www/html/assets/AdminLTE-2.0.5/plugin/timepicker
+    overwrite: true
+  - source: /assets/font-awesome-4.3.0/css
+    destination: /var/www/html/assets/font-awesome-4.3.0/css
+    overwrite: true
+  - source: /assets/font-awesome-4.3.0/fonts
+    destination: /var/www/html/assets/font-awesome-4.3.0/fonts
+    overwrite: true
+  - source: /assets/font-awesome-4.3.0/less
+    destination: /var/www/html/assets/font-awesome-4.3.0/less
+    overwrite: true
+  - source: /assets/font-awesome-4.3.0/scss
+    destination: /var/www/html/assets/font-awesome-4.3.0/scss
+    overwrite: true
+  - source: /assets/icon_maps
+    destination: /var/www/html/assets/icon_maps
+    overwrite: true
+  - source: /assets/ionicons-2.0.1
+    destination: /var/www/html/assets/ionicons-2.0.1
+    overwrite: true
+  - source: /assets/ionicons-2.0.1/builder
+    destination: /var/www/html/assets/ionicons-2.0.1/builder
+    overwrite: true
+  - source: /assets/ionicons-2.0.1/builder/cheatsheet
+    destination: /var/www/html/assets/ionicons-2.0.1/builder/cheatsheet
+    overwrite: true
+  - source: /assets/ionicons-2.0.1/builder/scripts
+    destination: /var/www/html/assets/ionicons-2.0.1/builder/scripts
+    overwrite: true
+  - source: /assets/ionicons-2.0.1/css
+    destination: /var/www/html/assets/ionicons-2.0.1/css
+    overwrite: true
+  - source: /assets/ionicons-2.0.1/fonts
+    destination: /var/www/html/assets/ionicons-2.0.1/fonts
+    overwrite: true
+  - source: /assets/ionicons-2.0.1/less
+    destination: /var/www/html/assets/ionicons-2.0.1/less
+    overwrite: true
+  - source: /assets/ionicons-2.0.1/png/512
+    destination: /var/www/html/assets/ionicons-2.0.1/png/512
+    overwrite: true
+  - source: /assets/ionicons-2.0.1/scss
+    destination: /var/www/html/assets/ionicons-2.0.1/scss
+    overwrite: true
+  - source: /assets/ionicons-2.0.1/src
+    destination: /var/www/html/assets/ionicons-2.0.1/src
+    overwrite: true
+  - source: /assets/jquery-ui-1.12.1.custom
+    destination: /var/www/html/assets/jquery-ui-1.12.1.custom
+    overwrite: true
+  - source: /assets/jquery-ui-1.12.1.custom/external/jquery
+    destination: /var/www/html/assets/jquery-ui-1.12.1.custom/external/jquery
+    overwrite: true
+  - source: /assets/jquery-ui-1.12.1.custom/images
+    destination: /var/www/html/assets/jquery-ui-1.12.1.custom/images
+    overwrite: true
+  - source: /assets/js
+    destination: /var/www/html/assets/js
+    overwrite: true
+  - source: /nbproject
+    destination: /var/www/html/nbproject
+    overwrite: true
+  - source: /nbproject/private
+    destination: /var/www/html/nbproject/private
+    overwrite: true
+  - source: /system
+    destination: /var/www/html/system
+    overwrite: true
+  - source: /system/core
+    destination: /var/www/html/system/core
+    overwrite: true
+  - source: /system/core/compat
+    destination: /var/www/html/system/core/compat
+    overwrite: true
+  - source: /system/database
+    destination: /var/www/html/system/database
+    overwrite: true
+  - source: /system/database/drivers
+    destination: /var/www/html/system/database/drivers
+    overwrite: true
+  - source: /system/database/drivers/cubrid
+    destination: /var/www/html/system/database/drivers/cubrid
+    overwrite: true
+  - source: /system/database/drivers/ibase
+    destination: /var/www/html/system/database/drivers/ibase
+    overwrite: true
+  - source: /system/database/drivers/mssql
+    destination: /var/www/html/system/database/drivers/mssql
+    overwrite: true
+  - source: /system/database/drivers/mysql
+    destination: /var/www/html/system/database/drivers/mysql
+    overwrite: true
+  - source: /system/database/drivers/mysqli
+    destination: /var/www/html/system/database/drivers/mysqli
+    overwrite: true
+  - source: /system/database/drivers/oci8
+    destination: /var/www/html/system/database/drivers/oci8
+    overwrite: true
+  - source: /system/database/drivers/odbc
+    destination: /var/www/html/system/database/drivers/odbc
+    overwrite: true
+  - source: /system/database/drivers/pdo
+    destination: /var/www/html/system/database/drivers/pdo
+    overwrite: true
+  - source: /system/database/drivers/pdo/subdrivers
+    destination: /var/www/html/system/database/drivers/pdo/subdrivers
+    overwrite: true
+  - source: /system/database/drivers/postgr
+    destination: /var/www/html/system/database/drivers/postgre
+    overwrite: true
+  - source: /system/database/drivers/sqlite
+    destination: /var/www/html/system/database/drivers/sqlite
+    overwrite: true
+  - source: /system/database/drivers/sqlite3
+    destination: /var/www/html/system/database/drivers/sqlite3
+    overwrite: true
+  - source: /system/database/drivers/sqlsrv
+    destination: /var/www/html/system/database/drivers/sqlsrv
+    overwrite: true
+  - source: /system/fonts
+    destination: /var/www/html/system/fonts
+    overwrite: true
+  - source: /system/helpers
+    destination: /var/www/html/system/helpers
+    overwrite: true
+  - source: /system/language
+    destination: /var/www/html/system/language
+    overwrite: true
+  - source: /system/language/english
+    destination: /var/www/html/system/language/english
+    overwrite: true
+  - source: /system/libraries
+    destination: /var/www/html/system/libraries
+    overwrite: true
+  - source: /system/libraries/Cache
+    destination: /var/www/html/system/libraries/Cache
+    overwrite: true
+  - source: /system/libraries/Cache/drivers
+    destination: /var/www/html/system/libraries/Cache/drivers
+    overwrite: true
+  - source: /system/libraries/Javascript
+    destination: /var/www/html/system/libraries/Javascript
+    overwrite: true
+  - source: /system/libraries/Session
+    destination: /var/www/html/system/libraries/Session
+    overwrite: true
+  - source: /system/libraries/Session/drivers
+    destination: /var/www/html/system/libraries/Session/drivers
+    overwrite: true
+  - source: /uploads
+    destination: /var/www/html/uploads
+    overwrite: true
+  - source: /uploads/CatatanPenggantian
+    destination: /var/www/html/uploads/CatatanPenggantian
+    overwrite: true
+  - source: /uploads/fotoProfil
+    destination: /var/www/html/uploads/fotoProfil
+    overwrite: true
+  - source: /uploads/PelaporanOperator
+    destination: /var/www/html/uploads/PelaporanOperator
+    overwrite: true
+  - source: /uploads/temp
+    destination: /var/www/html/uploads/temp
+    overwrite: true
+  - source: /user_guide
+    destination: /var/www/html/user_guide
+    overwrite: true
+  - source: /user_guide/_downloads
+    destination: /var/www/html/user_guide/_downloads
+    overwrite: true
+  - source: /user_guide/_images
+    destination: /var/www/html/user_guide/_images
+    overwrite: true
+  - source: /user_guide/_static
+    destination: /var/www/html/user_guide/_static
+    overwrite: true
+  - source: /user_guide/_static/css
+    destination: /var/www/html/user_guide/_static/css
+    overwrite: true
+  - source: /user_guide/_static/fonts
+    destination: /var/www/html/user_guide/_static/fonts
+    overwrite: true
+  - source: /user_guide/_static/js
+    destination: /var/www/html/user_guide/_static/js
+    overwrite: true
+  - source: /user_guide/contributing
+    destination: /var/www/html/user_guide/contributing
+    overwrite: true
+  - source: /user_guide/database
+    destination: /var/www/html/user_guide/database
+    overwrite: true
+  - source: /user_guide/documentation
+    destination: /var/www/html/user_guide/documentation
+    overwrite: true
+  - source: /user_guide/general
+    destination: /var/www/html/user_guide/general
+    overwrite: true
+  - source: /user_guide/helpers
+    destination: /var/www/html/user_guide/helpers
+    overwrite: true
+  - source: /user_guide/installation
+    destination: /var/www/html/user_guide/installation
+    overwrite: true
+  - source: /user_guide/libraries
+    destination: /var/www/html/user_guide/libraries
+    overwrite: true
+  - source: /user_guide/overview
+    destination: /var/www/html/user_guide/overview
+    overwrite: true
+  - source: /user_guide/tutorial
+    destination: /var/www/html/user_guide/tutorial
+    overwrite: true
+hooks:
+  BeforeInstall:
+    - location: scripts/install_dependencies.sh
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: scripts/install_composer_dependencies.sh
+      timeout: 300
+      runas: root
+    - location: scripts/start_server.sh
+      timeout: 30
+      runas: root
+  ApplicationStop:
+    - location: scripts/stop_server.sh
+      timeout: 30
+      runas: root
