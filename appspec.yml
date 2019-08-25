@@ -16,10 +16,10 @@ files:
   - source: /application/cache
     destination: /var/www/html/application/cache
     overwrite: true
-  - source: /application/.htaccess
+  - source: /application/cache/.htaccess
     destination: /var/www/html/application/cache/
     overwrite: true
-  - source: /application/index.html
+  - source: /application/cache/index.html
     destination: /var/www/html/application/cache/
     overwrite: true
   - source: /application/config
