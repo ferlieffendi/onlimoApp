@@ -37,9 +37,6 @@ files:
   - source: /application/libraries/tcpdf
     destination: /var/www/html/application/libraries/tcpdf
     overwrite: true
-  - source: /application/logs
-    destination: /var/www/html/application/log
-    overwrite: true
   - source: /application/models
     destination: /var/www/html/application/models
     overwrite: true
