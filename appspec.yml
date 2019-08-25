@@ -7,24 +7,24 @@ files:
   - source: /application
     destination: /var/www/html/application
     overwrite: true
-  - source: /application/cache
-    destination: /var/www/html/application/cache
-    overwrite: true
+#   - source: /application/cache
+#     destination: /var/www/html/application/cache
+#     overwrite: true
   - source: /application/config
     destination: /var/www/html/application/config
     overwrite: true
   - source: /application/controllers
     destination: /var/www/html/application/controllers
     overwrite: true
-  - source: /application/core
-    destination: /var/www/html/application/core
-    overwrite: true
-  - source: /application/helpers
-    destination: /var/www/html/application/helpers
-    overwrite: true
-  - source: /application/hooks
-    destination: /var/www/html/application/hooks
-    overwrite: true
+#   - source: /application/core
+#     destination: /var/www/html/application/core
+#     overwrite: true
+#   - source: /application/helpers
+#     destination: /var/www/html/application/helpers
+#     overwrite: true
+#   - source: /application/hooks
+#     destination: /var/www/html/application/hooks
+#     overwrite: true
   - source: /application/language
     destination: /var/www/html/application/language
     overwrite: true
@@ -49,8 +49,14 @@ files:
   - source: /application/views
     destination: /var/www/html/application/views
     overwrite: true
-  - source: /application/views/errors
-    destination: /var/www/html/application/views/errors
+#   - source: /application/views/errors
+#     destination: /var/www/html/application/views/errors
+#     overwrite: true
+  - source: /application/views/errors/cli
+    destination: /var/www/html/application/views/errors/cli
+    overwrite: true
+  - source: /application/views/errors/html
+    destination: /var/www/html/application/views/errors/html
     overwrite: true
   - source: /application/views/template
     destination: /var/www/html/application/views/template
